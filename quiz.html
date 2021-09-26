@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Triangles Quiz</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Is Triangle?</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="hypotenuse.html">Hypotenuse</a>
+      <a href="area.html">Area</a>
+    </nav>
+    <h1>Triangles Quiz</h1>
+    <p id="note-quiz">Note: Each question is of one point</p>
+    <form class="container quiz-form">
+      <!-- Question-1 -->
+      <div class="quiz-container">
+        <p>
+          What is the third angle for the triangle where angle1 = 45° and angle2
+          = 45°?
+        </p>
+        <label>
+          <input required type="radio" name="options1" value="45°" /> 45°
+        </label>
+        <label>
+          <input required type="radio" name="options1" value="90°" /> 90°
+          <!-- correct -->
+        </label>
+        <label>
+          <input required type="radio" name="options1" value="60°" /> 60°
+        </label>
+      </div>
+      <!-- Question-2 -->
+      <div class="quiz-container">
+        <p>If a triangle has an angle of 90° degrees, what is it called?</p>
+        <label>
+          <input required type="radio" name="options2" value="obtuse" /> obtuse
+        </label>
+        <label>
+          <input required type="radio" name="options2" value="acute" /> acute
+        </label>
+        <label>
+          <input required type="radio" name="options2" value="right-angled" />
+          right-angled
+          <!-- correct -->
+        </label>
+      </div>
+      <!-- Question-3 -->
+      <div class="quiz-container">
+        <p>Is the triangle: 100°, 60°, 20° degrees an Obtuse angle triangle?</p>
+        <label>
+          <input required type="radio" name="options3" value="Yes" /> Yes
+          <!-- Correct -->
+        </label>
+        <label>
+          <input required type="radio" name="options3" value="No" /> No
+        </label>
+      </div>
+      <!-- Question-4 -->
+      <div class="quiz-container">
+        <p>
+          A triangle that has no equal sides and no equal angles is known as
+        </p>
+        <label>
+          <input
+            required
+            type="radio"
+            name="options4"
+            value="isosceles triangle"
+          />
+          isosceles triangle
+        </label>
+        <label>
+          <input
+            required
+            type="radio"
+            name="options4"
+            value="scalene triangle"
+          />
+          scalene triangle
+          <!-- Correct -->
+        </label>
+        <label>
+          <input required type="radio" name="options4" value="right angle" />
+          right angle
+        </label>
+      </div>
+      <!-- Question-5 -->
+      <div class="quiz-container">
+        <p>
+          The two angles of a traingle are 25° & 80°, what will be the third
+          angle?
+        </p>
+        <label>
+          <input required type="radio" name="options5" value="40" />
+          40
+        </label>
+        <label>
+          <input required type="radio" name="options5" value="62" />
+          62
+        </label>
+        <label>
+          <input required type="radio" name="options5" value="75" />
+          75
+          <!-- Correct -->
+        </label>
+      </div>
+      <!-- Question-6 -->
+      <div class="quiz-container">
+        <p>Which of the following angle will make Equilateral triangle?</p>
+        <label>
+          <input required type="radio" name="options6" value="30" />
+          30
+        </label>
+        <label>
+          <input required type="radio" name="options6" value="60" />
+          60
+          <!-- Correct -->
+        </label>
+        <label>
+          <input required type="radio" name="options6" value="90" />
+          90
+        </label>
+      </div>
+      <button id="submit-btn" class="btn" type="submit">Submit Form</button>
+    </form>
+    <h2 id="quiz-result"></h2>
+    <script src="quiz.js"></script>
+  </body>
+</html>
