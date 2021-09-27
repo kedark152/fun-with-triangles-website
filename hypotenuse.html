@@ -8,20 +8,37 @@
     <title>Hypotenuse of Triangle</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Is Triangle?</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="hypotenuse.html">Hypotenuse</a>
-      <a href="area.html">Area</a>
-    </nav>
-    <h1>Hypotenuse of Triangle</h1>
+   <!-- Nav Body -->
+   <h1>Fun with Triangles</h1>
+   <nav class="navigation"
+   <ul class="nav-tabs">
+     <li class="list-item-inline">
+     <a class="tab" href="index.html">Is Triangle?</a>
+     </li>
+     <li class="list-item-inline">
+     <a class ="tab" href="quiz.html">Quiz</a>
+     </li>
+     <li class="list-item-inline">
+     <a class="tab-active tab" href="hypotenuse.html">Hypotenuse</a>
+     </li>
+     <li class="list-item-inline">
+     <a class="tab" href="area.html">Area</a>
+     </li>
+   </ul>
+   </nav>
+   <!-- main Body -->
+   <div class="main-body">
+    <h2>Hypotenuse of Triangle</h2>
     <p id="message">Enter the two sides of triangle to get the Hypotenuse</p>
-    <label for="side-a">Length of Side A</label>
-    <input required type="number" id="side-a" />
-    <label for="side-b">Length of Side B</label>
-    <input required type="number" id="side-b" />
+    <label id="lbl-hypo" for="side-a">Length of Side A</label>
+    <input  class="hypo-side" type="number" id="side-a" />
+    <label id="lbl-hypo"for="side-b">Length of Side B</label>
+    <input class="hypo-side" type="number" id="side-b"/>
+    <p id="errorMsg"></p>
+    <h2 id="result-hypo"></h2>
     <button class="btn">Check Hypotenuse</button>
-    <div id="result-hypo"></div>
+   
+  </div>
     <script src="hypotenuse.js"></script>
   </body>
 </html>

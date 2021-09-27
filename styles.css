@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    background-color:  #0a61b3;
+    color: white;
+    padding: 1.7rem;
+    margin: 0%;
+    font-size: 2.5rem;
+    
+}
+h2{
+    margin-top: 0rem;
+    color: darkblue;
+}
+.list-non-bullet{
+    list-style: none;
+    }
+    
+.list-item-inline{
+      display: inline;
+     
+      
+}
+.navigation{
+    background-color: #9d174dec;
+    padding: 1rem ;
+    font-size: 20px;
+    text-align: center;
+    margin: 0rem;
+  
+}
+.navigation a{
+    color: white;
+    margin: 0%;
+    text-decoration: none;  
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    
+    
+}
+.navigation .tab:hover {
+	background-color: #F59E0B;
+   
+}
+.navigation .tab-active{
+   
+    background-color:  #F59E0B;
+    font-weight: bold;
+}
+body{
+    margin: 0%;
+   background: url('./Images/bg-image.jpg') no-repeat center top/cover;
+   font-family: 'Koh Santepheap', cursive;
+   
+  
+}
+.main-body{
+   
+    text-align: center;
+    width: 90%;
+  
+    padding-bottom: 0.5rem;
+    max-width: 600px;
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+   
+}
+#message{
+    font-weight: bold;
+}
+label{
+    font-weight: bold;
+   
+}
+#angle, #lbl-hypo, #area{
+    display: block;
+    
+}
+.angle-input, .hypo-side, .area{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.btn{
+    background-color: #9D174D;
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    align-items: center;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#errorMsg{
+    color: red;
+    font-weight: bold;
+}
+/* Quiz Page */
+#question{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: purple;
+}
+/* Hypotenuse */

@@ -8,18 +8,31 @@
     <title>Triangles Quiz</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Is Triangle?</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="hypotenuse.html">Hypotenuse</a>
-      <a href="area.html">Area</a>
-    </nav>
-    <h1>Triangles Quiz</h1>
-    <p id="note-quiz">Note: Each question is of one point</p>
+   <!-- Nav Body -->
+   <h1>Fun with Triangles</h1>
+   <nav class="navigation"
+   <ul class="nav-tabs">
+     <li class="list-item-inline">
+     <a class="tab" href="index.html">Is Triangle?</a>
+     </li>
+     <li class="list-item-inline">
+     <a class ="tab-active tab" href="quiz.html">Quiz</a>
+     </li>
+     <li class="list-item-inline">
+     <a class="tab" href="hypotenuse.html">Hypotenuse</a>
+     </li>
+     <li class="list-item-inline">
+     <a class="tab" href="area.html">Area</a>
+     </li>
+   </ul>
+   </nav>
+   <div class="main-body">
+    <h2>Triangles Quiz</h2>
+    <p id="message">Note: Each question is of one point</p>
     <form class="container quiz-form">
       <!-- Question-1 -->
       <div class="quiz-container">
-        <p>
+        <p id=question>
           What is the third angle for the triangle where angle1 = 45° and angle2
           = 45°?
         </p>
@@ -36,7 +49,7 @@
       </div>
       <!-- Question-2 -->
       <div class="quiz-container">
-        <p>If a triangle has an angle of 90° degrees, what is it called?</p>
+        <p id="question">If a triangle has an angle of 90° degrees, what is it called?</p>
         <label>
           <input required type="radio" name="options2" value="obtuse" /> obtuse
         </label>
@@ -51,7 +64,7 @@
       </div>
       <!-- Question-3 -->
       <div class="quiz-container">
-        <p>Is the triangle: 100°, 60°, 20° degrees an Obtuse angle triangle?</p>
+        <p id="question">Is the triangle: 100°, 60°, 20° degrees an Obtuse angle triangle?</p>
         <label>
           <input required type="radio" name="options3" value="Yes" /> Yes
           <!-- Correct -->
@@ -62,7 +75,7 @@
       </div>
       <!-- Question-4 -->
       <div class="quiz-container">
-        <p>
+        <p id="question">
           A triangle that has no equal sides and no equal angles is known as
         </p>
         <label>
@@ -91,7 +104,7 @@
       </div>
       <!-- Question-5 -->
       <div class="quiz-container">
-        <p>
+        <p id="question">
           The two angles of a traingle are 25° & 80°, what will be the third
           angle?
         </p>
@@ -111,7 +124,7 @@
       </div>
       <!-- Question-6 -->
       <div class="quiz-container">
-        <p>Which of the following angle will make Equilateral triangle?</p>
+        <p id="question">Which of the following angle will make Equilateral triangle?</p>
         <label>
           <input required type="radio" name="options6" value="30" />
           30
@@ -126,9 +139,11 @@
           90
         </label>
       </div>
+      <h2 id="quiz-result"></h2>
       <button id="submit-btn" class="btn" type="submit">Submit Form</button>
     </form>
-    <h2 id="quiz-result"></h2>
+  
+  </div>
     <script src="quiz.js"></script>
   </body>
 </html>
