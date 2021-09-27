@@ -53,7 +53,7 @@ h2{
 body{
     margin: 0%;
    background: url('./Images/bg-image.jpg') no-repeat center top/cover;
-   font-family: 'Koh Santepheap', cursive;
+   font-family: 'Koh Santepheap', 'cursive';
    
   
 }
